@@ -1,0 +1,119 @@
+1)easy
+
+Given an array of integers, print the number of magic elements in the array. A magic element is an element in the array which is less than all the elements to its left in the array. The first element of the array, that is element indexed at 0 is not magic by definition. The array may also contain duplicates. 
+Input format : First line of the input contains a single integer N (>= 2), denoting the size of the array. Next line contains N space separated integers like 10 21 34 23 53. 
+Example : Input : 5 6 9 12 4 1 Output : 2
+
+2)hard
+
+In a parade ground, army soldiers of Regiment-A are standing in a line in increasing order of their height (from left to right). The soldiers of Regiment-B are standing in decreasing order of their height again from left to right. For some reason these two regiments merge without disturbing the relative orders amongst themselves. That is, the soldiers in Regiment-B stand to the right of the last soldier in Regiment-A. The Lieutenant arrives and wants the tallest soldier to lead the parade. You need to write program to help the Lieutenant in finding the position (or index) of a soldier with maximum height.  Input format: First line of the input contains a single integer N, denoting the number of the soldier. Next line contains N space separated integers like 10 21 34 23 53. The sequence of integers a0,a1,...,aN−1 satisfies the property that there exists an index0 ≤ p ≤ N−1 such that a0 < a1 < a2 <...<ap  and  ap >ap+1 >...an−1.  Example :  Input :  7 100 200 340 780 600 550 250 Output : 3
+
+3)Very hard
+
+Tug of war is a sport that pits two teams against each other in a test of strength: teams pull on opposite ends of a rope, with the goal being to bring the rope a certain distance in one direction against the force of the opposing team’s pull. Mr. Krishnamurti, a sports faculty, asked students of Class 10 to stand in a straight line. In order to conduct a fair game Mr. Krishnamurti has to divide students in such a way that the sum of weight of students on the left side is equal to sum of weight of students on the right side. Since the game requires a referee Mr. Krishnamurti has decided to select a student as Referee who is standing at a point of equilibrium i.e. sum of weight of student in left side is equal to sum of weight of student in right side. You need to help Mr. Krishnamurti in selecting a student as Referee.  Write a program to return the position (or index) of the Referee if one exists. If no such split is possible, return -1.  Note:  The students cannot be reordered. Indexing starts with index zero i.e. 0. Weight of students can be negative.  Input format : First line of the input contains a single integer N, denoting the number of students. Next line contains N space separated integers like 10 21 34 23 53.  
+Example 1: Input : 7 6252436 
+Output : 
+3 
+Explanation : 
+Weight of students are given as: Wt[]=6,2,5,2,4,3,6 As, Wt[0] + Wt[1] + Wt[2] = Wt[4] + Wt[4] + Wt[6] Referee position is : 3 
+Example 2: Input : 7 -7 12 4 6 -4 3 0 
+Output : 
+2 
+Explanation : 
+Weight of students are given as : Wt []= -7, 12, 4, 6, -4, 3, 0 As, Wt[0] + Wt[1] = Wt[3] + Wt[4] + Wt[5] + Wt[6] Referee position is : 2 
+Example 3: Input : 3 123 Output : 
+-1 Explanation : No split is possible. 
+
+4)hard
+LAB-8(iit) 
+5)moderate
+Implement BST with linked list and write following function
+        1) implement ordered insert (if element already exists ignore the function call)
+        2)implement delete and free allocated memory
+        3)implement display with pre-order , post-order, in-order traversal
+
+
+6)moderate
+Given two queues Q1 and Q2 (objects of class queue). Find out Q3=Q1+Q2 (use operator overloading). 
+Example 
+Q1: 2,5,6,3,8 Q2: 1,3,7,4,3 Q3: 3,8,13,7,11 
+
+7)moderate
+In your integer queue class implement sort queue function which sorts the element in ascending order. Implement another function called as evenOddMerge, merge 2 pre sorted queues into a new larger sorted queue such that all the evens are in order then all of the odds are in order. You may assume that the function sort queue is always called before evenOddMerge. 
+In the main method of your driver program, create two queues with several items each, print the queues, call the sort queue method then call the merge method. Then print the original and merged queues. Example 
+Sorted q1 contains 1, 2, 4, 6 and sorted q2 contains 0, 1, 2, 3, 5 Call the merge method: q3 = evenOddMerge(q1, q2); After the call to merge, q3 contains 0, 2, 2, 4, 6, 1, 1, 3, 5 
+
+ 8)moderate
+
+Write a program to find the shortest path between two given nodes in a BST. Example: The shortest path between 2 and 5 is 3.
+
+
+
+9)moderate
+
+Write a function to find the number of half nodes (nodes with only one child) in binary tree. 
+
+10)moderate
+Write a program to find the diameter of the binary tree. The diameter of a tree also called as width is the number of nodes on the longest path between two leaves in the tree. 
+
+11)easy
+Write a program to find the sum of all the elements of the tree.  
+12)moderate
+Write a program to convert the BST into doubly linked list. 
+13)easy
+Delete middle element of stack.
+14)moderate
+Our task is to compute an alternating series using the numbers that you entered. An alternating series switches the sign of the number being added for every other number. For example, if we enter the 
+number 1, 3, 15, 9 then we would compute the alternating series as 1 - 3 + 15 - 9 = 4. Modify the intQueue code so that it computes the sum of an alternating series of the numbers as they are removed from the queue (so the first number is positive, the second is negative, etc.). Display the alternating series to the screen on a single line. So if the numbers 1, 3, 15, and 9 were entered by the user, the code should display: 
+1 - 3 + 15 - 9 = 4. 
+Next modify the integer stack code so that it computes the sum of an alternating series of the numbers as they are removed from the stack (so the first number of the stack is positive, the second is negative, etc.). Display the alternating series to the screen on a single line as above. How is the result of the stack different from the result of the queue. This is different than the result you get when using a queue. In addition, there are some cases where the result of using either a stack or a queue will be exactly the same. Finally, how could you modify your stack code so that it always gives the same result as your queue code? 
+
+
+15)easy
+Implement queue using two stack.
+
+16)moderate
+A bracket is considered to be any one of the following characters: (, ), {, }, [, or ].A matching pair of brackets is not balanced if the set of brackets it encloses are not matched. For example, {[(])} is not balanced because the contents in between { and } are not balanced.
+
+Complete the function isBalanced in the editor below.
+is Balanced has the following parameter(s):
+string s: a string of brackets
+
+Returns
+string: either YES or NO
+
+Sample Input:
+
+STDIN           			     Function
+
+3               			n = 3
+{ [ ( ) ] }          		first s = ‘{ [ ( ) ] }’
+{ [ ( ] ) }          		second s = ‘{ [ ( ] ) }’
+{ { [ [ ( ( ) ) ] ] } }    	third s =‘{ { [ [ ( ( ) ) ] ] } }’
+
+Sample Output
+YES
+NO
+YES
+
+
+
+
+17)moderate
+
+ write a program to check for balanced parentheses, brackets and braces. The program also ignores these symbols when they are part of a comment (lines beginning with //).
+For example, the following snippet is valid: int values (int arr[]) // (this is fun!
+And this is not: int values (int arr[])] // (this is fun!
+18)moderate
+A deque (pronounced “deck”) is similar to a queue, except that elements can be enqueued at either end and dequeued from either end. Define a Deque ADT and then provide an implementation for your definition.
+
+19)moderate
+
+Find nearest greater element to right for each element in the array by using Stack.
+                                                    AND 
+Find nearest greater element to left for each element in the array by using Stack.
+
+20)moderate
+Find the nearest smaller number on left side in an array by using stack.
+                                  AND 
+Find the nearest smaller number on right side in an array by using stack.
